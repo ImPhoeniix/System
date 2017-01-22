@@ -1,0 +1,6 @@
+name: System
+version: 1.0
+author: ImPhoeniix
+main: de.imphoeniix.main.Main
+commands:
+  koordinaten:

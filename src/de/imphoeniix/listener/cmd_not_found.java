@@ -24,7 +24,7 @@ public class cmd_not_found implements Listener {
 
         if(helptopic == null) {
 
-            p.sendMessage(praefix + "Der Befehl " + e.getMessage() + "wurde nicht gefunden!");
+            p.sendMessage(praefix + "Der Befehl " + e.getMessage() + " wurde nicht gefunden!");
 
             e.setCancelled(true);
         } else {

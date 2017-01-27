@@ -34,12 +34,12 @@ public class Main extends JavaPlugin implements Listener{
         Player p = e.getPlayer();
 
 
-            if(p.hasPermission("system.chat.moderator")) {
-                e.setFormat(" §7[§cMOD§7] §c" + p.getName() + " §7: §8" + nachricht);
-            } else if(p.hasPermission("system.chat.developer")) {
+            if(p.hasPermission("system.chat.developer")) {
                 e.setFormat(" §7[§3DEV§7] §3" + p.getName() + " §7: §8" + nachricht);
+            } else if(p.hasPermission("system.chat.moderator")) {
+                e.setFormat(" §7[§cMOD§7] §c" + p.getName() + " §7: §8" + nachricht);
             } else if(p.hasPermission("system.chat.supporter")) {
-                e.setFormat(" §7[§1SUP§7] §4" + p.getName() + " §7: §8" + nachricht);
+                e.setFormat(" §7[§9SUP§7] §9" + p.getName() + " §7: §8" + nachricht);
             } else if(p.hasPermission("system.chat.premium")) {
                 e.setFormat(" §a" + p.getName() + " §7: §8" + nachricht);
             } else {
